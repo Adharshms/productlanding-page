@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      #header-img {
+        max-width: 150px;
+      }
+
+      #nav-bar ul {
+        list-style: none;
+        display: flex;
+        gap: 2em;
+        margin: 0;
+      }
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #ffb302;
+      }
+
+      main {
+        padding-top: 120px;
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      #subscribe h2 {
+        margin-bottom: 1em;
+      }
+
+      #form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 3em;
+      }
+
+      #email {
+        padding: 0.8em 1em;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 0.5em;
+        border: none;
+      }
+
+      #submit {
+        padding: 0.8em 2em;
+        background-color: #ffb302;
+        border: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 0.5em;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      #submit:hover {
+        background-color: #e09e00;
+      }
+
+      #features {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-bottom: 4em;
+      }
+
+      #features div {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1.5em;
+        border-radius: 0.5em;
+      }
+
+      iframe {
+        margin: 3em auto;
+        border-radius: 0.5em;
+        max-width: 100%;
+      }
+
+      #pricing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        margin-bottom: 4em;
+      }
+
+      .product {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        padding: 2em;
+        border-radius: 0.5em;
+        width: 280px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+      }
+
+      .product:hover {
+        transform: translateY(-5px);
+      }
+
+      .head {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: #ffb302;
+      }
+
+      .product h3 {
+        margin: 0.5em 0 1em;
+        font-size: 1.5em;
+      }
+
+      .product p {
+        margin-bottom: 0.5em;
+      }
+
+      button {
+        margin-top: 1em;
+        padding: 0.7em 2em;
+        border: none;
+        background-color: #ffb302;
+        color: black;
+        font-weight: bold;
+        border-radius: 0.5em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #e09e00;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 2em 1em;
+        text-align: center;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 1em;
+        padding: 0;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: #ffb302;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo" />
+      <nav id="nav-bar">
+        <ul id="links">
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">How it works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="subscribe">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+          <input id="submit" type="submit" value="GET STARTED">
+        </form>
+      </section>
+
+      <section id="features">
+        <div>
+          <h2>Premium Materials</h2>
+          <p>Our trombones use the shiniest brass sourced locally to ensure longevity and top quality.</p>
+        </div>
+        <div>
+          <h2>Fast Shipping</h2>
+          <p>We deliver your trombone swiftly and offer free returns if you're not satisfied.</p>
+        </div>
+        <div>
+          <h2>Quality Assurance</h2>
+          <p>Every purchase is checked for defects and sound quality before delivery.</p>
+        </div>
+      </section>
+
+      <section>
+        <iframe id="video" width="600" height="300" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="product">
+          <h4 class="head">Tenor Trombone</h4>
+          <h3>$600</h3>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+          <button>Select</button>
+        </div>
+        <div class="product">
+          <h4 class="head">Bass Trombone</h4>
+          <h3>$900</h3>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+          <button>Select</button>
+        </div>
+        <div class="product">
+          <h4 class="head">Valve Trombone</h4>
+          <h3>$1200</h3>
+          <p>Plays similar to a Trumpet.</p>
+          <p>Great for Jazz Bands.</p>
+          <p>Lorem ipsum dolor.</p>
+          <p>Lorem ipsum.</p>
+          <button>Select</button>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <ul class="address">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2016, Original Trombones</p>
+      </footer>
+    </main>
+  </body>
+</html>
